@@ -19,7 +19,7 @@ public class HomeContoller {
         return "Hello world "+req.getSession().getId();
     }
 
-    private List<Student> students = new ArrayList<>(List.of(new Student(1,"girish",90),new Student(2,"kumar",95)));
+    private List<Student> students = new ArrayList<>(List.of(new Student(1,"charan",100),new Student(2,"sen",95)));
     @GetMapping("/students")
     public List<Student> getStudents(){
         return students;
